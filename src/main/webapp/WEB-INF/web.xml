@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>Streamer</display-name>
+  <servlet>
+    <servlet-name>ViewMedia</servlet-name>
+    <servlet-class>org.sumanta.service.ViewMedia</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>ViewMedia</servlet-name>
+  <url-pattern>/ViewMedia</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddMedia</servlet-name>
+    <servlet-class>org.sumanta.service.AddMedia</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>AddMedia</servlet-name>
+  <url-pattern>/AddMedia</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteMedia</servlet-name>
+    <servlet-class>org.sumanta.service.DeleteMedia</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>DeleteMedia</servlet-name>
+  <url-pattern>/DeleteMedia</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EditMedia</servlet-name>
+    <servlet-class>org.sumanta.service.EditMedia</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>EditMedia</servlet-name>
+  <url-pattern>/EditMedia</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Streamer</servlet-name>
+    <servlet-class>org.sumanta.service.Streamer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Streamer</servlet-name>
+  <url-pattern>/Streamer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Player</servlet-name>
+    <servlet-class>org.sumanta.service.Player</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Player</servlet-name>
+  <url-pattern>/Player</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>/jsp/index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
